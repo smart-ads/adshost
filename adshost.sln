@@ -27,6 +27,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{0FA433
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "db", "db\db\db.sqlproj", "{284FB18C-9FF8-49D7-91D3-4E40889E4996}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{2DD6C3E0-D959-4032-9E34-D1A39D7781CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "concept", "concept", "{B94F5589-EBC5-490A-9ADC-F19C15FCAB7F}"
+	ProjectSection(SolutionItems) = preProject
+		docs\concept\Размещение_рекламного_блока_вебмастером.pdf = docs\concept\Размещение_рекламного_блока_вебмастером.pdf
+		docs\concept\Создание РК.pdf = docs\concept\Создание РК.pdf
+		docs\concept\Сущности.pdf = docs\concept\Сущности.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +63,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5E52888A-6B70-4F26-B94D-26F676B16148} = {5D07041A-80E6-494B-875B-1888BB587B74}
 		{284FB18C-9FF8-49D7-91D3-4E40889E4996} = {95F6317F-E24A-4779-B6E0-EB1E79067022}
+		{B94F5589-EBC5-490A-9ADC-F19C15FCAB7F} = {2DD6C3E0-D959-4032-9E34-D1A39D7781CF}
 	EndGlobalSection
 EndGlobal
