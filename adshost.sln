@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "model", "model", "{67D53454
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datamodel", "model\datamodel\datamodel.csproj", "{64ADB746-7830-4E3F-B8C2-FF035C15FD9B}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "adspot.test", "test\adspot.test\adspot.test.njsproj", "{3FC064B5-1407-4141-8DB2-68E1F506A154}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{64ADB746-7830-4E3F-B8C2-FF035C15FD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64ADB746-7830-4E3F-B8C2-FF035C15FD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64ADB746-7830-4E3F-B8C2-FF035C15FD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC064B5-1407-4141-8DB2-68E1F506A154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC064B5-1407-4141-8DB2-68E1F506A154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC064B5-1407-4141-8DB2-68E1F506A154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC064B5-1407-4141-8DB2-68E1F506A154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +79,6 @@ Global
 		{284FB18C-9FF8-49D7-91D3-4E40889E4996} = {95F6317F-E24A-4779-B6E0-EB1E79067022}
 		{B94F5589-EBC5-490A-9ADC-F19C15FCAB7F} = {2DD6C3E0-D959-4032-9E34-D1A39D7781CF}
 		{64ADB746-7830-4E3F-B8C2-FF035C15FD9B} = {67D53454-013E-4402-80A5-1ADBFE409C8B}
+		{3FC064B5-1407-4141-8DB2-68E1F506A154} = {EA9EBAA2-0B25-42B4-8436-C2AD73849D3F}
 	EndGlobalSection
 EndGlobal
