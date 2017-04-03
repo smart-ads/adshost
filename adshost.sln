@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{5D07041A-80E6-494B-875B-1888BB587B74}"
 EndProject
@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datamodel", "model\datamode
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "adspot.test", "test\adspot.test\adspot.test.njsproj", "{6416DCBA-C265-44F9-A4D2-5F571475B104}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adspot.asp.test", "test\adspot.asp.test\adspot.asp.test.csproj", "{39C69687-73D9-4FCC-B884-546B4AFF4B70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{6416DCBA-C265-44F9-A4D2-5F571475B104}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6416DCBA-C265-44F9-A4D2-5F571475B104}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6416DCBA-C265-44F9-A4D2-5F571475B104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C69687-73D9-4FCC-B884-546B4AFF4B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C69687-73D9-4FCC-B884-546B4AFF4B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C69687-73D9-4FCC-B884-546B4AFF4B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C69687-73D9-4FCC-B884-546B4AFF4B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +86,6 @@ Global
 		{B94F5589-EBC5-490A-9ADC-F19C15FCAB7F} = {2DD6C3E0-D959-4032-9E34-D1A39D7781CF}
 		{64ADB746-7830-4E3F-B8C2-FF035C15FD9B} = {67D53454-013E-4402-80A5-1ADBFE409C8B}
 		{6416DCBA-C265-44F9-A4D2-5F571475B104} = {EA9EBAA2-0B25-42B4-8436-C2AD73849D3F}
+		{39C69687-73D9-4FCC-B884-546B4AFF4B70} = {EA9EBAA2-0B25-42B4-8436-C2AD73849D3F}
 	EndGlobalSection
 EndGlobal
