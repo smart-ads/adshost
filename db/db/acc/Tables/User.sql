@@ -25,7 +25,7 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level2name = N'Id'
 GO
 EXEC sp_addextendedproperty @name = N'MS_Description',
-    @value = N'Наименование',
+    @value = N'Имя',
     @level0type = N'SCHEMA',
     @level0name = N'acc',
     @level1type = N'TABLE',

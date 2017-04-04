@@ -69,5 +69,9 @@
     <Build Include="acc\Tables\Advertiser.sql" />
     <Build Include="acc\Tables\User.sql" />
     <Build Include="Security\acc.sql" />
+    <Build Include="acc\Tables\WebMaster.sql" />
+    <Build Include="acc\Tables\Partner.sql" />
+    <Build Include="acc\Tables\Manager.sql" />
+    <Build Include="acc\Tables\Admin.sql" />
   </ItemGroup>
 </Project>
