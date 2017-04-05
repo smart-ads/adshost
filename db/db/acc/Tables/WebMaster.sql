@@ -7,7 +7,7 @@
 
 GO
 
-CREATE UNIQUE INDEX [IX_WebMaster#Name] ON [acc].[WebMaster] ([Name])
+CREATE UNIQUE INDEX [UK_WebMaster#Name] ON [acc].[WebMaster] ([Name])
 
 GO
 EXEC sp_addextendedproperty @name = N'MS_Description',

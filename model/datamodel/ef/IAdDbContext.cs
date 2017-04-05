@@ -15,11 +15,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
-    public partial interface IDbContext : System.IDisposable
+    public partial interface IAdDbContext : System.IDisposable
     {
         System.Data.Entity.DbSet<Admin> Admins { get; set; } // Admin
         System.Data.Entity.DbSet<Advertiser> Advertisers { get; set; } // Advertiser
+        System.Data.Entity.DbSet<AdvertisingCompany> AdvertisingCompanies { get; set; } // AdvertisingCompany
         System.Data.Entity.DbSet<Manager> Managers { get; set; } // Manager
         System.Data.Entity.DbSet<Partner> Partners { get; set; } // Partner
         System.Data.Entity.DbSet<User> Users { get; set; } // User

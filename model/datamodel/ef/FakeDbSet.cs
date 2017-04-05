@@ -15,6 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     using System.Linq;
 

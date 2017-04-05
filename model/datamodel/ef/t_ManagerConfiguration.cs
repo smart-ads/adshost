@@ -15,6 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     // Manager
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.29.1.0")]

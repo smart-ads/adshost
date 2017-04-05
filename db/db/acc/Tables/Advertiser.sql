@@ -34,4 +34,4 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level2name = N'Name'
 GO
 
-CREATE UNIQUE INDEX [IX_Advertiser#Name] ON [acc].[Advertiser] ([Name])
+CREATE UNIQUE INDEX [UK_Advertiser#Name] ON [acc].[Advertiser] ([Name])

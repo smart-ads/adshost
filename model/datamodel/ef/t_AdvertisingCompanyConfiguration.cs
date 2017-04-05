@@ -17,18 +17,19 @@ namespace datamodel
 {
     using Newtonsoft.Json;
 
-    // Partner
+    // AdvertisingCompany
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.29.1.0")]
-    public partial class PartnerConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Partner>
+    public partial class AdvertisingCompanyConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<AdvertisingCompany>
     {
-        public PartnerConfiguration()
-            : this("acc")
+        public AdvertisingCompanyConfiguration()
+            : this("comp")
         {
         }
 
-        public PartnerConfiguration(string schema)
+        public AdvertisingCompanyConfiguration(string schema)
         {
             Property(x => x.Name).IsUnicode(false);
+
             InitializePartial();
         }
         partial void InitializePartial();

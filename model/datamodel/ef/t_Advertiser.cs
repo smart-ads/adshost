@@ -15,6 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     // Advertiser
     [Table("Advertiser", Schema = "acc")]
@@ -37,15 +38,24 @@ namespace datamodel
         /// Имя
         ///</summary>
         [Column(@"Name", Order = 2, TypeName = "varchar")]
-        [Index(@"IX_Advertiser#Name", 1, IsUnique = true, IsClustered = false)]
+        [Index(@"UK_Advertiser#Name", 1, IsUnique = true, IsClustered = false)]
         [Required]
         [MaxLength(255)]
         [StringLength(255)]
         [Display(Name = "Name")]
         public string Name { get; set; } // Name (length: 255)
 
+        // Reverse navigation
+
+        [JsonIgnore]
+        /// <summary>
+        /// Child AdvertisingCompanies where [AdvertisingCompany].[CreatedBy] point to this entity (FK_AdvertisingCompany_Advertizer)
+        /// </summary>
+        public virtual System.Collections.Generic.ICollection<AdvertisingCompany> AdvertisingCompanies { get; set; } // AdvertisingCompany.FK_AdvertisingCompany_Advertizer
+
         public Advertiser()
         {
+            AdvertisingCompanies = new System.Collections.Generic.List<AdvertisingCompany>();
             InitializePartial();
         }
 

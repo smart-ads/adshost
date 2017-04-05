@@ -42,3 +42,6 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level1name = N'Admin',
     @level2type = N'COLUMN',
     @level2name = N'IsSuper'
+GO
+
+CREATE UNIQUE INDEX [UK_Admin#Name] ON [acc].[Admin] ([Name])

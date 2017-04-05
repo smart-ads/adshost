@@ -34,4 +34,4 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level2name = N'Id'
 GO
 
-CREATE UNIQUE INDEX [IX_Manager#Name] ON [acc].[Manager] ([Name])
+CREATE UNIQUE INDEX [UK_Manager#Name] ON [acc].[Manager] ([Name])

@@ -15,6 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     // User
     [Table("User", Schema = "acc")]
@@ -37,6 +38,7 @@ namespace datamodel
         /// Имя
         ///</summary>
         [Column(@"Name", Order = 2, TypeName = "varchar")]
+        [Index(@"UK_User#Name", 1, IsUnique = true, IsClustered = false)]
         [Required]
         [MaxLength(255)]
         [StringLength(255)]

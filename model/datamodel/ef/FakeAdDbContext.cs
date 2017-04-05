@@ -15,23 +15,26 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     using System.Linq;
 
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.29.1.0")]
-    public partial class FakeDbContext : IDbContext
+    public partial class FakeAdDbContext : IAdDbContext
     {
         public System.Data.Entity.DbSet<Admin> Admins { get; set; }
         public System.Data.Entity.DbSet<Advertiser> Advertisers { get; set; }
+        public System.Data.Entity.DbSet<AdvertisingCompany> AdvertisingCompanies { get; set; }
         public System.Data.Entity.DbSet<Manager> Managers { get; set; }
         public System.Data.Entity.DbSet<Partner> Partners { get; set; }
         public System.Data.Entity.DbSet<User> Users { get; set; }
         public System.Data.Entity.DbSet<WebMaster> WebMasters { get; set; }
 
-        public FakeDbContext()
+        public FakeAdDbContext()
         {
             Admins = new FakeDbSet<Admin>("Id");
             Advertisers = new FakeDbSet<Advertiser>("Id");
+            AdvertisingCompanies = new FakeDbSet<AdvertisingCompany>("Id");
             Managers = new FakeDbSet<Manager>("Id");
             Partners = new FakeDbSet<Partner>("Id");
             Users = new FakeDbSet<User>("Id");

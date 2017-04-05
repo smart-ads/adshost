@@ -15,6 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     // WebMaster
     [Table("WebMaster", Schema = "acc")]
@@ -37,7 +38,7 @@ namespace datamodel
         /// Имя
         ///</summary>
         [Column(@"Name", Order = 2, TypeName = "varchar")]
-        [Index(@"IX_WebMaster#Name", 1, IsUnique = true, IsClustered = false)]
+        [Index(@"UK_WebMaster#Name", 1, IsUnique = true, IsClustered = false)]
         [Required]
         [MaxLength(255)]
         [StringLength(255)]

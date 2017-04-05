@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace datamodel
 {
-    public partial class DbContext
+    public partial class AdDbContext
     {
-        private static void DbContextStaticPartial()
+        private static void AdDbContextStaticPartial()
         {
         }
     }

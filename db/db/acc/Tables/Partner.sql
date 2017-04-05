@@ -8,7 +8,7 @@
 GO
 
 
-CREATE UNIQUE INDEX [IX_Partner#Name] ON [acc].[Partner] ([Name])
+CREATE UNIQUE INDEX [UK_Partner#Name] ON [acc].[Partner] ([Name])
 
 GO
 EXEC sp_addextendedproperty @name = N'MS_Description',

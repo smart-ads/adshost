@@ -17,10 +17,10 @@ namespace datamodel
 {
     using Newtonsoft.Json;
 
-    // Admin
-    [Table("Admin", Schema = "acc")]
+    // AdvertisingCompany
+    [Table("AdvertisingCompany", Schema = "comp")]
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.29.1.0")]
-    public partial class Admin
+    public partial class AdvertisingCompany
     {
 
         ///<summary>
@@ -28,17 +28,17 @@ namespace datamodel
         ///</summary>
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Column(@"Id", Order = 1, TypeName = "int")]
-        [Index(@"PK_Admin", 1, IsUnique = true, IsClustered = true)]
+        [Index(@"PK_AdvertisingCompany", 1, IsUnique = true, IsClustered = true)]
         [Required]
         [Key]
         [Display(Name = "Id")]
         public int Id { get; set; } // Id (Primary key)
 
         ///<summary>
-        /// Имя
+        /// Наименование
         ///</summary>
         [Column(@"Name", Order = 2, TypeName = "varchar")]
-        [Index(@"UK_Admin#Name", 1, IsUnique = true, IsClustered = false)]
+        [Index(@"UK_AdvertisingCompany#Name", 1, IsUnique = true, IsClustered = false)]
         [Required]
         [MaxLength(255)]
         [StringLength(255)]
@@ -46,16 +46,39 @@ namespace datamodel
         public string Name { get; set; } // Name (length: 255)
 
         ///<summary>
-        /// Супер-администратор
+        /// Дата создания
         ///</summary>
-        [Column(@"IsSuper", Order = 3, TypeName = "bit")]
+        [Column(@"CreationDate", Order = 3, TypeName = "datetimeoffset")]
         [Required]
-        [Display(Name = "Is super")]
-        public bool IsSuper { get; set; } // IsSuper
+        [Display(Name = "Creation date")]
+        public System.DateTimeOffset CreationDate { get; set; } // CreationDate
 
-        public Admin()
+        ///<summary>
+        /// Активная
+        ///</summary>
+        [Column(@"IsActive", Order = 4, TypeName = "bit")]
+        [Required]
+        [Display(Name = "Is active")]
+        public bool IsActive { get; set; } // IsActive
+
+        ///<summary>
+        /// Кем создана
+        ///</summary>
+        [Column(@"CreatedBy", Order = 5, TypeName = "int")]
+        [Required]
+        [Display(Name = "Created by")]
+        public int CreatedBy { get; set; } // CreatedBy
+
+        // Foreign keys
+
+        [JsonIgnore]
+        /// <summary>
+        /// Parent Advertiser pointed by [AdvertisingCompany].([CreatedBy]) (FK_AdvertisingCompany_Advertizer)
+        /// </summary>
+        [ForeignKey("CreatedBy"), Required] public virtual Advertiser Advertiser { get; set; } // FK_AdvertisingCompany_Advertizer
+
+        public AdvertisingCompany()
         {
-            IsSuper = false;
             InitializePartial();
         }
 

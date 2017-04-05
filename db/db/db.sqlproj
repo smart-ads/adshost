@@ -61,6 +61,8 @@
     <Folder Include="acc\" />
     <Folder Include="acc\Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="comp" />
+    <Folder Include="comp\Tables" />
   </ItemGroup>
   <ItemGroup>
     <None Include="db.publish.xml" />
@@ -73,5 +75,7 @@
     <Build Include="acc\Tables\Partner.sql" />
     <Build Include="acc\Tables\Manager.sql" />
     <Build Include="acc\Tables\Admin.sql" />
+    <Build Include="Security\comp.sql" />
+    <Build Include="comp\Tables\AdvertisingCompany.sql" />
   </ItemGroup>
 </Project>

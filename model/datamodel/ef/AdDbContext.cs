@@ -15,50 +15,52 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace datamodel
 {
+    using Newtonsoft.Json;
 
     using System.Linq;
 
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.29.1.0")]
-    public partial class DbContext : System.Data.Entity.DbContext, IDbContext
+    public partial class AdDbContext : System.Data.Entity.DbContext, IAdDbContext
     {
         public System.Data.Entity.DbSet<Admin> Admins { get; set; } // Admin
         public System.Data.Entity.DbSet<Advertiser> Advertisers { get; set; } // Advertiser
+        public System.Data.Entity.DbSet<AdvertisingCompany> AdvertisingCompanies { get; set; } // AdvertisingCompany
         public System.Data.Entity.DbSet<Manager> Managers { get; set; } // Manager
         public System.Data.Entity.DbSet<Partner> Partners { get; set; } // Partner
         public System.Data.Entity.DbSet<User> Users { get; set; } // User
         public System.Data.Entity.DbSet<WebMaster> WebMasters { get; set; } // WebMaster
 
-        static DbContext()
+        static AdDbContext()
         {
-            System.Data.Entity.Database.SetInitializer<DbContext>(null);
-            DbContextStaticPartial(); // Create the following method in your partial class: private static void DbContextStaticPartial() { }
+            System.Data.Entity.Database.SetInitializer<AdDbContext>(null);
+            AdDbContextStaticPartial(); // Create the following method in your partial class: private static void AdDbContextStaticPartial() { }
         }
 
-        public DbContext()
+        public AdDbContext()
             : base("Name=db")
         {
             InitializePartial();
         }
 
-        public DbContext(string connectionString)
+        public AdDbContext(string connectionString)
             : base(connectionString)
         {
             InitializePartial();
         }
 
-        public DbContext(string connectionString, System.Data.Entity.Infrastructure.DbCompiledModel model)
+        public AdDbContext(string connectionString, System.Data.Entity.Infrastructure.DbCompiledModel model)
             : base(connectionString, model)
         {
             InitializePartial();
         }
 
-        public DbContext(System.Data.Common.DbConnection existingConnection, bool contextOwnsConnection)
+        public AdDbContext(System.Data.Common.DbConnection existingConnection, bool contextOwnsConnection)
             : base(existingConnection, contextOwnsConnection)
         {
             InitializePartial();
         }
 
-        public DbContext(System.Data.Common.DbConnection existingConnection, System.Data.Entity.Infrastructure.DbCompiledModel model, bool contextOwnsConnection)
+        public AdDbContext(System.Data.Common.DbConnection existingConnection, System.Data.Entity.Infrastructure.DbCompiledModel model, bool contextOwnsConnection)
             : base(existingConnection, model, contextOwnsConnection)
         {
             InitializePartial();
@@ -84,6 +86,7 @@ namespace datamodel
 
             modelBuilder.Configurations.Add(new AdminConfiguration());
             modelBuilder.Configurations.Add(new AdvertiserConfiguration());
+            modelBuilder.Configurations.Add(new AdvertisingCompanyConfiguration());
             modelBuilder.Configurations.Add(new ManagerConfiguration());
             modelBuilder.Configurations.Add(new PartnerConfiguration());
             modelBuilder.Configurations.Add(new UserConfiguration());
@@ -96,6 +99,7 @@ namespace datamodel
         {
             modelBuilder.Configurations.Add(new AdminConfiguration(schema));
             modelBuilder.Configurations.Add(new AdvertiserConfiguration(schema));
+            modelBuilder.Configurations.Add(new AdvertisingCompanyConfiguration(schema));
             modelBuilder.Configurations.Add(new ManagerConfiguration(schema));
             modelBuilder.Configurations.Add(new PartnerConfiguration(schema));
             modelBuilder.Configurations.Add(new UserConfiguration(schema));

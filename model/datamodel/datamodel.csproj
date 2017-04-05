@@ -68,22 +68,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ef\AdDbContext.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
     <Compile Include="ef\db.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
-    <Compile Include="ef\DbContext.cs">
-      <DependentUpon>db.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ef\DbContext.Init.cs" />
-    <Compile Include="ef\FakeDbContext.cs">
+    <Compile Include="ef\AdDbContext.Init.cs" />
+    <Compile Include="ef\FakeAdDbContext.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
     <Compile Include="ef\FakeDbSet.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
-    <Compile Include="ef\IDbContext.cs">
+    <Compile Include="ef\IAdDbContext.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
     <Compile Include="ef\t_Admin.cs">
@@ -96,6 +96,12 @@
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
     <Compile Include="ef\t_AdvertiserConfiguration.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ef\t_AdvertisingCompany.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ef\t_AdvertisingCompanyConfiguration.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
     <Compile Include="ef\t_Manager.cs">

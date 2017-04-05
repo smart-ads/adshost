@@ -32,3 +32,6 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level1name = N'User',
     @level2type = N'COLUMN',
     @level2name = N'Name'
+GO
+
+CREATE UNIQUE INDEX [UK_User#Name] ON [acc].[User] ([Name])
