@@ -14,10 +14,9 @@ namespace Data
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<WebMaster> WebMaster { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public adsdbContext(DbContextOptions<adsdbContext> options) : base(options)
         {
-            #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-            optionsBuilder.UseSqlServer(@"data source=LENOVO-PC;initial catalog=adsdb;persist security info=True;user id=sa;password=P@ssw0rd;MultipleActiveResultSets=True;App=adshost");
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
