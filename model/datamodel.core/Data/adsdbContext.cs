@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace datamodel
+namespace Data
 {
     public partial class adsdbContext : DbContext
     {

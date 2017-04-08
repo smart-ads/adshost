@@ -24,7 +24,7 @@ namespace datamodel.gen
             {
                 ConnectionString = @"data source=LENOVO-PC;initial catalog=adsdb;persist security info=True;user id=sa;password=P@ssw0rd;MultipleActiveResultSets=True;App=adshost",
                 ProjectPath = @"..\datamodel.core\Data",
-                ProjectRootNamespace = "datamodel",
+                ProjectRootNamespace = "Data",
                 
             };
 

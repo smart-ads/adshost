@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace datamodel
+namespace Data
 {
     [Table("Manager", Schema = "acc")]
     public partial class Manager
