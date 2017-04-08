@@ -18,6 +18,12 @@ namespace WebApp.test
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "AdvertisingCompanies",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "AdvertisingCompanies", action = "List", id = UrlParameter.Optional }
+            );
         }
     }
 }

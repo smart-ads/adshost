@@ -181,6 +181,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AdvertisingCompaniesController.cs" />
+    <Compile Include="Controllers\CompanyControllersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -252,6 +253,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\AdvertisingCompanies\View.cshtml" />
+    <Content Include="Views\CompanyControllers\Create.cshtml" />
+    <Content Include="Views\CompanyControllers\Delete.cshtml" />
+    <Content Include="Views\CompanyControllers\Details.cshtml" />
+    <Content Include="Views\CompanyControllers\Edit.cshtml" />
+    <Content Include="Views\CompanyControllers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
