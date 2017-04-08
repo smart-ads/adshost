@@ -1,20 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Data;
-using Microsoft.EntityFrameworkCore.Extensions;
-using Microsoft.EntityFrameworkCore;
+﻿
+ASP.NET MVC core dependencies have been added to the project.
+However you may still need to do make changes to your project.
 
-namespace app.core.test
-{
-    public class Startup
-    {
+1. Suggested changes to Startup class:
+    1.1 Add a constructor:
         public IConfigurationRoot Configuration { get; }
 
         public Startup(IHostingEnvironment env)
@@ -26,16 +15,14 @@ namespace app.core.test
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
-
+    1.2 Add MVC services:
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<adsdbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            // Add framework services.
             services.AddMvc();
-        }
+       }
+
+    1.3 Configure web app to use use Configuration and use MVC routing:
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
@@ -60,5 +47,3 @@ namespace app.core.test
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
-    }
-}
